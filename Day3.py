@@ -15,10 +15,24 @@ height = int(input("What is your height in CM? "))
 if height > 120:
     age = int(input("You can ride. How old are you? "))
     if age < 12 :
-        print("Your cost will be $5")
-    elif age >= 12 and age <= 18:
-        print("Your cost will be $7")
+        photos = input("Would you like photos - y or n?").lower()
+        if photos == "y":
+            print("Your cost will be $8.")
+        else:
+            print("Your cost will be $5")
+    elif age >= 12 and age <= 17:
+        photos = input("Would you like photos - y or n?").lower()
+        if photos == "y":
+            print("Your cost will be $10.")
+        else:
+            print("Your cost will be $7")
     else:
-        print("Your cost will be $12")
+        photos = input("Would you like photos - y or n?").lower()
+        if photos == "y":
+            print("Your cost will be $15.")
+        else:
+            print("Your cost will be $12")
 else:
     print("Sorry you are not tall enough to ride.")
+
+#
