@@ -9,3 +9,16 @@ if number % 2 == 0:
 else:
     print("Your Number is an odd number.")
 
+# Angela asks for a ticketing system using a diagram using nested if/else statements
+height = int(input("What is your height in CM? "))
+
+if height > 120:
+    age = int(input("You can ride. How old are you? "))
+    if age < 12 :
+        print("Your cost will be $5")
+    elif age >= 12 and age <= 18:
+        print("Your cost will be $7")
+    else:
+        print("Your cost will be $12")
+else:
+    print("Sorry you are not tall enough to ride.")
