@@ -78,7 +78,7 @@ lives = 6
 for _ in chosen_word:
     display.append("_")
 
-print(f"The word is {chosen_word}")
+#print(f"The word is {chosen_word}")
 end_of_game = False
 
 while not end_of_game:
