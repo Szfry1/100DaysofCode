@@ -10,9 +10,9 @@ def ceasar(text, shift,direction):
     for item in text:
         place = alphabet.index(item)
         if direction == "encode":
-            shift = place + shift 
+            shift = (place + shift) % 26 
         elif direction == "decode":
-            shift = place - shift 
+            shift = (place - shift) % 26
         cipher_text += alphabet[shift]
     print(cipher_text)
 ceasar(text=text, shift=shift, direction=direction)
