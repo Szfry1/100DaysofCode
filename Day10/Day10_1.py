@@ -28,8 +28,6 @@ def days_in_month(year, month):
         else: return 30
     
 
-
-
     
  # month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]  
   
